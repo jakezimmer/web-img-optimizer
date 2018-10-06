@@ -1,5 +1,5 @@
 # Welcome to the Image Optimizer
-This optimizer performs [lossy compression](https://en.wikipedia.org/wiki/Lossy_compression)
+This optimizer performs [lossy compression](https://en.wikipedia.org/wiki/Lossy_compression). The script tries to keep the loss relatively minimal (not like the example provided at that link). 
 If you're looking for lossless compression this is a [good one](https://github.com/joedicastro/img4web)
 
 ---
