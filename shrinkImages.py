@@ -5,7 +5,7 @@ print(os.getcwd())
 sum = 0
 sizesaved = 0
 
-ACTUALLYDOIT = True
+ACTUALLYDOIT = False
 DOGIFS = False
 USEMP4 = False
 DOJPGS = True
@@ -63,14 +63,14 @@ if (DOGIFS):
             print(file)
             filesize = getsize(file)
             if(ACTUALLYDOIT):
-                (call(["gifsicle","-O3", "--colors", "127" ,file ,"-o", file]))
+                (call(["gifsicle","-O3", "--colors", "256" ,file ,"-o", file]))
             sizesaved = sizesaved + filesize - getsize(file)
             sum=sum+1
         for file in glob.glob("**/*.GIF", recursive=True):
             print(file)
             filesize = getsize(file)
             if(ACTUALLYDOIT):
-                (call(["gifsicle","-O3", "--use-colormap", "web" ,file ,"-o", file]))
+                (call(["gifsicle","-O3", "--colors", "256" ,file ,"-o", file]))
             sizesaved = sizesaved + filesize - getsize(file)
             sum=sum+1
 
